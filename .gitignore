@@ -1,0 +1,6 @@
+/__pycache__
+/venv
+
+# Compiled binaries
+/asm/infer
+/cpp/infer
