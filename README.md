@@ -57,3 +57,17 @@ Results on an ARM64 system:
 - `tools/pack_model.py`: Packs JSON/safetensors into clean binary headers for the C++ and assembly runtimes.
 - `benchmark.py`: Three-way timing comparison and output verification.
 
+## Licence 
+MIT
+
+## Thanks
+Thanks to the openai-community team on HuggingFace for providing the model : https://huggingface.co/openai-community/openai-gpt
+
+## Citation Information
+@article{radford2018improving,
+  title={Improving language understanding by generative pre-training},
+  author={Radford, Alec and Narasimhan, Karthik and Salimans, Tim and Sutskever, Ilya and others},
+  year={2018},
+  publisher={OpenAI}
+}
+
