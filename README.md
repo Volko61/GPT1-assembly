@@ -16,7 +16,7 @@ All three read the same model weights and produce identical output. The assembly
 # Setup python environment
 python3 -m venv venv
 source venv/bin/activate
-pip install numpy safetensors
+pip install numpy
 
 # Download and pack model assets (converts safetensors/json to raw binary offsets)
 python3 tools/pack_model.py
