@@ -1,6 +1,11 @@
 # GPT1-assembly
 
-GPT-1 inference implemented three ways: Python (NumPy), C++, and pure ARM64 assembly.
+GPT-1 inference implemented three ways: Python (NumPy), C++, and pure ARM64 assembly to benchmark their performance.
+
+<img width="750" height="421" alt="image" src="https://github.com/user-attachments/assets/af494d7e-ca46-47c7-ac5a-bb49fd44f266" />
+In the current implementation, we can see the C++ implementation clearly outperform the Python version (6.91x faster) and the Assembly version.
+
+/!\ My implementations might not be ideal, feel free to try to improve the speed and submit as PR
 
 All three read the same model weights and produce identical output. The assembly version uses hand-written NEON vectorization; the C++ version relies on compiler auto-vectorization (`-O3 -march=native`); the Python version uses NumPy for matrix math.
 
@@ -56,6 +61,9 @@ Results on an ARM64 system:
 - `asm/model.inc`: Model dimensions and weight byte offsets.
 - `tools/pack_model.py`: Packs JSON/safetensors into clean binary headers for the C++ and assembly runtimes.
 - `benchmark.py`: Three-way timing comparison and output verification.
+
+## AI Notice
+Help of LLMs has been used, especially on the assembly and C++. It's a side project and I did't had enough time to not use these tools.
 
 ## Licence 
 MIT
